@@ -89,7 +89,7 @@ class myHandler(BaseHTTPRequestHandler):
 			self.send_response(200)
 			self.send_header('Content-type','text/html')
 			self.end_headers()
-			self.wfile.write("option 1 count: " + str(option1_count))
+			self.wfile.write("Vote received.")
 		elif(self.path == '/option2'):
 			increment_option2()
 			self.send_response(200)
