@@ -13,7 +13,6 @@ from os.path import isfile, join
 PORT_NUMBER = 8080
 
 option1_count = 0
-option2_count = 0
 total_count = 0
 current_option = 1
 usbSerial = serial.Serial("COM5", 9600)
