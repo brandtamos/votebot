@@ -115,10 +115,11 @@ try:
 	print 'Started httpserver on port ' , PORT_NUMBER
 	
 	t1 = threading.Thread(target=send_signal, args=[])
-	t2 = threading.Thread(target=play_music, args=[])
-	
 	t1.start()
-	t2.start()
+	
+	#uncomment these if you want to use the music playing feature
+	#t2 = threading.Thread(target=play_music, args=[])
+	#t2.start()
 	
 	
 	#Wait forever for incoming http requests

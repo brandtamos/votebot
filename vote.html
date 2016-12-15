@@ -9,8 +9,8 @@
   crossorigin="anonymous"></script>
   
 <script>
-	var option1name = 'Buzz Ballads';
-	var option2name = 'Chumbawumba';
+	var option1name = 'Option 1';
+	var option2name = 'Option 2';
 	function updateTally(){
 		$.getJSON('/gettally', function(data){
 			$('#option1').text(option1name + ' ('+ data.option1 +')');
@@ -29,7 +29,7 @@
 			$.get('/option2');
 		});
 		//update tallies every 2 seconds
-		//setInterval(updateTally, 2000);
+		setInterval(updateTally, 2000);
 	});
 </script>
 <style>
